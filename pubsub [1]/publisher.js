@@ -1,7 +1,5 @@
 const amqp = require('amqplib');
 
-const task = { id: process.argv[2] };
-
 (async () => {
   const connection = await amqp.connect('amqp://localhost:5672');
   const channel = await connection.createChannel();
