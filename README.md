@@ -8,7 +8,7 @@ This repository is all about experimenting and learning by doing stuff of Rabbit
 
 This is the example for simple hello world, just test the flow publisher to consumer
 
-### `1. Pub/Sub`
+### `1. Pub/Sub - fanout`
 
 Where publish will send the message to an exchanger, so the exchanger can send message to one or multiple queues,
 then multiple consumer can consume the same message from the different queue.
