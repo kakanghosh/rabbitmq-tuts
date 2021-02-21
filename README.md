@@ -15,15 +15,15 @@ then multiple consumer can consume the same message from the different queue.
 
 ### `2. Direct Exchange`
 
-In this example we can add binding key to the exchanger with the queue,
-so that we can decide at the publishing time which queue should get the message from the exchanger by the help the routing key.
+In this example we can add `binding key` to the `exchange` with the queue,
+so that we can decide at the publishing time which queue should get the message from the `exchange` by the help the `routing key`.
 
 ### `3. Topic`
 
-In this example we can use wildcard _ (one word) or # (one or multiple words) for binding key,
-so that we can map queue and exchanger based on the wildcard. It should be separated by dot(.). Like: socialmedia._, #.log etc
+In this example we can use wildcard `*(one word)` or `#(one or multiple words)` for `binding key`,
+so that we can map `queue and exchange` based on the wildcard. It should be separated by dot(.). Like: `socialmedia.*`, `#.log` etc
 
 ### `4. RPC`
 
-In this example we can get result for the request was send from the publisher. So, while sending the request we will define the replyTo queue and correlationId,
-so that consumer/rpc can reply back to that callback queue, correlationId is for matching the response because this ID will be generated for the endivitual publisher when it starts up.
+In this example we can get result for the request was send from the publisher. So, while sending the request we will define the `replyTo` queue and `correlationId`,
+so that `consumer/rpc` can reply back to that callback queue, `correlationId` is for matching the response because this ID will be generated for the endivitual publisher when it starts up.
