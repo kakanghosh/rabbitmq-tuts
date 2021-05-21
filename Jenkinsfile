@@ -8,6 +8,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh "npm install"
+                sh "ls -lh"
             }
         }
         stage('Test') {
